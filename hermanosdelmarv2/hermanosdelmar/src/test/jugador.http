@@ -1,0 +1,197 @@
+###Admin Id
+GET http://localhost:8080/admin/20
+
+###Admin Lista
+GET http://localhost:8080/admin
+
+###Admin Crear
+POST http://localhost:8080/admin
+Content-Type: application/json
+
+{
+    "nombreAdmin": "JavierGod",
+    "rol": "Admin"
+}
+
+###Admin Editar
+PUT http://localhost:8080/admin/21
+Content-Type: application/json
+
+{
+    "nombreAdmin": "JavierCho",
+    "rol": "Admin"
+}
+
+###Admin Eliminar
+DELETE http://localhost:8080/admin/21
+
+---------------------------------------------------------
+
+###Negocio Id
+GET http://localhost:8080/negocios/1
+
+
+###Negocio Lista
+GET http://localhost:8080/negocios
+
+###Negocio Crear
+POST http://localhost:8080/negocios
+Content-Type: application/json
+
+{
+    "nombreNegocio": "McDonalds",
+    "direccion": "Calle 135#2-30"
+}
+
+###Negocio Editar
+PUT http://localhost:8080/negocios/21
+Content-Type: application/json
+
+{
+    "nombreNegocio": "Presto",
+    "direccion": "Calle 135#2-30"
+}
+
+---------------------------------------------------------------
+###Jefe de Area Id
+GET http://localhost:8080/jefes-area/1
+
+
+###jefe de Area Lista
+GET http://localhost:8080/jefes-area
+
+###Jefe de Area Crear
+POST http://localhost:8080/jefes-area
+Content-Type: application/json
+
+{
+    "nombreJefe": "McDonalds",
+    "rol": "Jefe_de_Area",
+    "area": "Area 1"
+}
+
+###Jefe de Area Editar
+PUT http://localhost:8080/jefes-area/4
+Content-Type: application/json
+
+{
+    "nombreJefe": "Presto",
+    "rol": "Jefe_de_Area",
+    "area": "Area 1"
+}
+
+-----------------------------------------------------------------
+
+###Negocio Id
+GET http://localhost:8080/negocios/1
+
+
+###Negocio Lista
+GET http://localhost:8080/negocios
+
+###Negocio Crear
+POST http://localhost:8080/negocios
+Content-Type: application/json
+
+{
+    "nombreNegocio": "McDonalds",
+    "direccion": "Calle 135#2-30"
+}
+
+###Negocio Editar
+PUT http://localhost:8080/negocios/21
+Content-Type: application/json
+
+{
+    "nombreNegocio": "Presto",
+    "direccion": "Calle 135#2-30"
+}
+
+---------------------------------------------------------------
+###Area Id
+GET http://localhost:8080/area/2
+
+
+###Area Lista
+GET http://localhost:8080/area
+
+###Area Crear
+POST http://localhost:8080/area
+Content-Type: application/json
+
+{
+    "nombreArea": "OtroMas"
+}
+
+###Jefe de Area Editar
+PUT http://localhost:8080/area/4
+Content-Type: application/json
+
+{
+    "nombreArea": "OtroMenos"
+}
+
+--------------------------------------------------------------
+###Empleado Id
+GET http://localhost:8080/empleado/2
+
+
+###Empleado Lista
+GET http://localhost:8080/empleado
+
+###Empleado Crear
+POST http://localhost:8080/empleado
+Content-Type: application/json
+
+{
+    "nombreEmpleado": "Paula Vera Torres",
+    "correo": "pau_veto@correo.com",
+    "fechaContrato": "26-07-01",
+    "rol": "Empleado",
+    "performance": 0,
+    "valoracion": 0,
+    "numCursos": 0,
+    "cursosCursados": 0
+}
+
+###Empleado Editar
+PUT http://localhost:8080/empleado/21
+Content-Type: application/json
+
+{
+  "nombreEmpleado": "Pauliña",
+  "correo": "bebsiño@correo.com",
+  "fechaContrato": "26-07-01",
+  "rol": "Empleado",
+  "performance": 0,
+  "valoracion": 0,
+  "numCursos": 0,
+  "cursosCursados": 0
+}
+
+------------------------------------------------------------------------------
+
+###Curso Id
+GET http://localhost:8080/curso/2
+
+
+###Curso Lista
+GET http://localhost:8080/curso
+
+###Curso Crear
+POST http://localhost:8080/curso
+Content-Type: application/json
+
+{
+   "nombreCurso": "Constitución",
+    "cercaniaValoracion": 100
+}
+
+###Curso Editar
+PUT http://localhost:8080/curso/31
+Content-Type: application/json
+
+{
+   "nombreCurso": "Epa",
+    "cercaniaValoracion": 100
+}
