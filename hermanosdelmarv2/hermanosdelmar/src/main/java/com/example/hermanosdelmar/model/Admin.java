@@ -1,5 +1,7 @@
 package com.example.hermanosdelmar.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,8 +26,9 @@ public class Admin {
 
     private String nombreAdmin;
     private String rol;
-    
-    @OneToOne(cascade = CascadeType.ALL)
+
+    @JsonIgnore
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "negocio_id", referencedColumnName = "id")
     private Negocio negocio;
 

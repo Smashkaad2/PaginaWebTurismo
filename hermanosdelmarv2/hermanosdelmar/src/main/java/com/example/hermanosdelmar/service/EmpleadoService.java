@@ -36,6 +36,7 @@ public class EmpleadoService {
             empleado.setNombreEmpleado(empleadoDetalles.getNombreEmpleado());
             empleado.setCorreo(empleadoDetalles.getCorreo());
             empleado.setFechaContrato(empleadoDetalles.getFechaContrato());
+            empleado.setArea(empleadoDetalles.getArea());
             empleado.setRol(empleadoDetalles.getRol());
             empleado.setPerformance(empleadoDetalles.getPerformance());
             empleado.setValoracion(empleadoDetalles.getValoracion());

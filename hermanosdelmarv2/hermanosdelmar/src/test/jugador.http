@@ -147,6 +147,7 @@ Content-Type: application/json
     "nombreEmpleado": "Paula Vera Torres",
     "correo": "pau_veto@correo.com",
     "fechaContrato": "26-07-01",
+    "area": "Recepcion",
     "rol": "Empleado",
     "performance": 0,
     "valoracion": 0,
@@ -160,8 +161,9 @@ Content-Type: application/json
 
 {
   "nombreEmpleado": "Pauliña",
-  "correo": "bebsiño@correo.com",
+  "correo": "bebesiño@correo.com",
   "fechaContrato": "26-07-01",
+  "area": "Restaurante",
   "rol": "Empleado",
   "performance": 0,
   "valoracion": 0,

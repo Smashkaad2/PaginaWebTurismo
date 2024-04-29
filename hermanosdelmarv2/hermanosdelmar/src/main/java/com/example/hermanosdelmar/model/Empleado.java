@@ -1,10 +1,19 @@
 package com.example.hermanosdelmar.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,10 +32,30 @@ public class Empleado {
     private String nombreEmpleado;
     private String correo;
     private String fechaContrato;
+    private String area;
     private String rol;
     private int performance;
     private int valoracion;
     private int numCursos;
     private int cursosCursados;
-    
+
+    @OneToMany(mappedBy = "empleado")
+    private List<EmpleadoXCurso> cursos;
+
+     @ManyToOne
+    @JsonIgnore
+    private JefeArea empleadosJefeArea;
+
+    public List<EmpleadoXCurso> getCursos() {
+        return cursos;
+    }
+
+    public boolean addCurso(EmpleadoXCurso curso) {
+        return cursos.add(curso);
+    }
+
+
+   
+
+   
 }
