@@ -1,0 +1,23 @@
+<h1>Cursos</h1>
+<table class="tabla">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Título</th>
+        <th>Habilidad</th>
+        <th>Horas</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items" (click)="redirigir(item.link)">
+        <td>{{ item.num }}</td>
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.habilidad }}</td>
+        <td>{{ item.horas }}</td>
+        <td>{{ item.estado }}</td>
+        <td><a href="#" class="enlace" (click)="redirigir(item.link)"><img src="assets/Iniciar.png" alt="Ir"> </a></td>
+      </tr>
+    </tbody>
+  </table>

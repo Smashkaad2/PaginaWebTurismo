@@ -1,0 +1,35 @@
+<nav>
+    <ul>
+        <li>
+            <div class="div_logo">
+             
+            </div>
+        </li>
+       
+        <li>
+            <a class="opcion" href="/ingresarIngresos">Ingresar Ingresos</a>
+        </li>
+        <li>
+            <a class="opcion" href="/verIngresos">Ver Ingresos</a>
+        </li>
+        <li>
+            <a class="opcion" href="/verGastos/crearGastos/">Crear Gastos</a>
+        </li>
+        <li>
+            <a class="opcion" href="/verGastos">Gastos Existentes</a>
+        </li>
+        <li>
+            <a class="opcion" href="/verGastos/completados/">Gastos Completados</a>
+        </li>
+        <li>
+            <a class="opcion" href="{% url 'verBalance' %}">Ver Balance</a>
+        </li>
+
+        <li>
+            <a class="opcion" href="{% url 'estadisticas' %}">Ver Estadísticas</a>
+        </li>
+        <li>
+            <a class="opcion" href="{% url 'lista_grupos' %}">Ver Grupos</a>
+        </li>
+    </ul>
+</nav>
