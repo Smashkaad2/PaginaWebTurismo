@@ -1,5 +1,0 @@
-.texto{
-    display: inline-block;
-    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
-  text-align: center; /* Centra el texto horizontalmente */
-}
