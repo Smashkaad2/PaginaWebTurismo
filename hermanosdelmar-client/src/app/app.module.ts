@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SingInStartComponent } from './sign-in/sing-in-start/sing-in-start.component';
-import { SingInEmpleadoComponent } from './sing-in/sing-in-empleado/sing-in-empleado.component';
-import { EmployeStartComponent } from './employe/employe-start/employe-start.component';
+import { EmpleadoViewComponent } from './modules/empleado-view/empleado-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SingInStartComponent,
-    SingInEmpleadoComponent,
-    EmployeStartComponent
+    EmpleadoViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

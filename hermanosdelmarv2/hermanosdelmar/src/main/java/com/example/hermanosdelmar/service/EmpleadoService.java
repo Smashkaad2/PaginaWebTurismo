@@ -2,8 +2,12 @@ package com.example.hermanosdelmar.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
+import com.example.hermanosdelmar.model.Curso;
 import com.example.hermanosdelmar.model.Empleado;
+import com.example.hermanosdelmar.model.EmpleadoXCurso;
 import com.example.hermanosdelmar.repository.EmpleadoRepository;
 
 import java.util.List;
@@ -51,4 +55,12 @@ public class EmpleadoService {
     public void eliminarEmpleado(Long id) {
         empleadoRepository.deleteById(id);
     }
+
+    
+    public List<EmpleadoXCurso> obtenerListaCursos(Long idEmploye) {
+        Empleado empleado = empleadoRepository.findById(idEmploye).orElseThrow();
+        return empleado.getCursos();
+    }
+
+    
 }

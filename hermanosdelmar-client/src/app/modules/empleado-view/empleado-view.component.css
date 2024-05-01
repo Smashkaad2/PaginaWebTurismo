@@ -1,0 +1,68 @@
+:host {
+    /* display: flex; */
+    flex: 1; /* Para que el componente ocupe todo el espacio disponible */
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+h1{
+    color:#153448;
+}
+
+  /* Estilos generales de la tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilos para las celdas de cabecera */
+  .tabla th {
+    background-color: #3C5B6F;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #DFD0B8;
+  }
+  
+  /* Estilos para las celdas de datos */
+  .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilos para las filas impares */
+  .tabla tbody tr:nth-child(odd) {
+    background-color: #d8e5ed;
+  }
+  
+  /* Estilos para las filas al pasar el cursor sobre ellas */
+  .tabla tbody tr:hover {
+    background-color: #b1c2cc;
+  }
+  
+  /* Estilos para el enlace en la columna de acciones */
+  .tabla a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el enlace al pasar el cursor sobre él */
+  .tabla a:hover {
+    text-decoration: underline;
+  }
+
+  img{
+    width: 15px;
+  }
+
+  .enlace {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Opcional: Ajusta la altura del enlace al 100% del contenedor */
+  }
+  

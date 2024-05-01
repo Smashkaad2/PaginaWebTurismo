@@ -133,7 +133,7 @@ Content-Type: application/json
 
 --------------------------------------------------------------
 ###Empleado Id
-GET http://localhost:8080/empleado/2
+GET http://localhost:8080/empleado/1
 
 
 ###Empleado Lista
@@ -170,6 +170,9 @@ Content-Type: application/json
   "numCursos": 0,
   "cursosCursados": 0
 }
+
+###Empleado Cursos Lista
+GET http://localhost:8080/empleado/list/curso/1
 
 ------------------------------------------------------------------------------
 

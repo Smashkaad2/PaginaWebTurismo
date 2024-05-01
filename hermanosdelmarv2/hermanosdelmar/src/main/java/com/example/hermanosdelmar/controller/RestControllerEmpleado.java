@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.hermanosdelmar.model.Curso;
 import com.example.hermanosdelmar.model.Empleado;
+import com.example.hermanosdelmar.model.EmpleadoXCurso;
 import com.example.hermanosdelmar.service.EmpleadoService;
 
 @RestController
@@ -54,4 +56,11 @@ public class RestControllerEmpleado {
         empleadoService.eliminarEmpleado(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+      @GetMapping("/list/curso/{idemployee}")
+    public List<EmpleadoXCurso> obtenerListaCursos(@PathVariable long idemployee) {
+        return empleadoService.obtenerListaCursos(idemployee);
+    }
+
+
 }
