@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Empleado } from '../models/Empleado';
+
 
 
 @Injectable({
@@ -16,5 +18,9 @@ export class EmpleadoService {
 
   obtenerEmpleado(id: number): Observable<any>{
     return this.http.get(`${this.apiUrl}/${id}`);
+  }
+
+  obtenerEmpleados(): Observable<Empleado[]> {
+    return this.http.get<Empleado[]>(this.apiUrl);
   }
 }

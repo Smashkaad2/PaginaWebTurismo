@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Empleados {{currentArea}}</h1>
+    <h2 class="puntaje">Puntaje General: {{puntajeArea}}</h2>
+  </div>
+  <table class="tabla">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Cursados</th>
+        <th>Puntaje</th>
+        <th>Evaluar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of users; let i = index">
+        <td>{{ i + 1}}</td>
+        <td>{{ item.nombreEmpleado }}</td>
+        <td>{{ item.cursosCursados }}</td>
+        <td>{{ item.performance }}</td>
+        <td><a href="#" class="enlace" (click)="redirigir()"><img src="assets/Iniciar.png" alt="Ir"> </a></td>
+      </tr>
+    </tbody>
+  </table>
+
+

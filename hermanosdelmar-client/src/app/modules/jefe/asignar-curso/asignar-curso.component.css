@@ -1,0 +1,139 @@
+:host {
+    display: flex;
+    flex: 1; 
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+h1{
+    color:#153448;
+}
+
+.cursos{
+    margin-left: auto;
+    width: 65%;
+}
+.empleados{
+    width: 30%;
+}
+.container{
+    display: flex;
+    flex: 1;
+}
+
+  /* Estilos generales de la tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilos para las celdas de cabecera */
+  .tabla th {
+    background-color: #3C5B6F;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #DFD0B8;
+  }
+  
+  /* Estilos para las celdas de datos */
+  .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilos para las filas impares */
+  .tabla tbody tr:nth-child(odd) {
+    background-color: #d8e5ed;
+  }
+  
+  /* Estilos para las filas al pasar el cursor sobre ellas */
+  .tabla tbody tr:hover {
+    background-color: #b1c2cc;
+  }
+  
+  /* Estilos para el enlace en la columna de acciones */
+  .tabla a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el enlace al pasar el cursor sobre él */
+  .tabla a:hover {
+    text-decoration: underline;
+  }
+
+  img{
+    width: 15px;
+  }
+
+  .enlace {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Opcional: Ajusta la altura del enlace al 100% del contenedor */
+  }
+
+  .inicar_sesion {
+    color: #DFD0B8;
+    background-color: #3C5B6F;
+}
+
+.login_div {
+    width: 320px;
+    margin-top: 100px;
+    margin: 0 auto; 
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    color: #3C5B6F;
+    background-color: #DFD0B8;
+    margin-left: 20px;
+}
+
+.inicar_sesion:hover {
+    background-color: #948979;
+}
+
+.inicar_sesion:active {
+    background-color: #3C5B6F;
+}
+
+.btn-cancelar:hover {
+    background-color: #3C5B6F;
+    color:#DFD0B8;
+}
+
+.btn-cancelar:active {
+    background-color: #948979;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+   
+}
+.bigcontainer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+}

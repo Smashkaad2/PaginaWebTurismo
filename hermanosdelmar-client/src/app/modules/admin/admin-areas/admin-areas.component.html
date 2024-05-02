@@ -1,0 +1,90 @@
+<h1>Empleados</h1>
+<div class="tablas">
+  <div class="tablaEmpleado">
+    <h2 class="areaName">Hospedaje: {{numHospedaje}}</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Hechos</th>
+          <th>Puntaje</th>
+          <th>ver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of hospUsers; let i = index">
+          <td>{{ i + 1}}</td>
+          <td>{{ item.nombreEmpleado }}</td>
+          <td>{{ item.cursosCursados }}</td>
+          <td>{{ item.performance }}</td>
+          <!-- <td><a href="#" class="enlace" (click)="redirigir(item.link)"><img src="assets/Iniciar.png" alt="Ir"> </a></td> -->
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="desempehno">Desempeño {{desHospedaje}}</h3>
+    <div class="botones">
+      <button class="inicar_sesion">Agregar</button>
+      <button class="btn-cancelar">Eliminar</button>
+    </div>
+  </div>
+
+  <div class="tablaEmpleado">
+    <h2 class="areaName">Recepción: {{numRecepcion}}</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Hechos</th>
+          <th>Puntaje</th>
+          <th>ver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of recepUsers; let i = index">
+          <td>{{ i + 1}}</td>
+          <td>{{ item.nombreEmpleado }}</td>
+          <td>{{ item.cursosCursados }}</td>
+          <td>{{ item.performance }}</td>
+          <!-- <td><a href="#" class="enlace" (click)="redirigir(item.link)"><img src="assets/Iniciar.png" alt="Ir"> </a></td> -->
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="desempehno">Desempeño {{desRecepcion}}</h3>
+    <div class="botones">
+      <button class="inicar_sesion">Agregar</button>
+      <button class="btn-cancelar">Eliminar</button>
+    </div>
+  </div>
+
+
+  <div class="tablaEmpleado">
+    <h2 class="areaName">Restaurante {{numRestaurante}}</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Hechos</th>
+          <th>Puntaje</th>
+          <th>ver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of restaUsers; let i = index">
+          <td>{{ i + 1}}</td>
+          <td>{{ item.nombreEmpleado }}</td>
+          <td>{{ item.cursosCursados }}</td>
+          <td>{{ item.performance }}</td>
+          <!-- <td><a href="#" class="enlace" (click)="redirigir(item.link)"><img src="assets/Iniciar.png" alt="Ir"> </a></td> -->
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="desempehno">Desempeño {{desRestaurante}}</h3>
+    <div class="botones">
+      <button class="inicar_sesion">Agregar</button>
+      <button class="btn-cancelar">Eliminar</button>
+    </div>
+    
+  </div>

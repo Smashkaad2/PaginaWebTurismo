@@ -1,0 +1,18 @@
+<div class="login_div">
+    <br>
+    <p>¿No registrado? <a href="/signup">crea tu cuenta ahora</a></p>
+    <form class="login_form">
+
+        <input type="email" placeholder="Correo"  id="correo" name="correo" [(ngModel)]="correo" required class="correo">
+        <input type="password" placeholder="Contraseña"id="contrasena" name="contrasena" [(ngModel)]="contrasena" required class="pass">
+
+        <br><br>
+        <button (click)="iniciarSesion()" class="inicar_sesion">Iniciar sesión</button>
+        <button class="btn-cancelar">Cancelar</button>
+        <br><br>
+
+        <p><a href="/recuperar_clave">Olvidé mi contraseña</a></p>
+        <br>
+        {{error}}
+    </form>
+</div>
