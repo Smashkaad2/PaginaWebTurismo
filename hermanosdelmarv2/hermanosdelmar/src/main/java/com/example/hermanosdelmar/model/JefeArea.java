@@ -29,6 +29,8 @@ public class JefeArea {
     private Long id;
 
     private String nombreJefe;
+    private String correo;
+    private String password;
     private String rol;
     private String areaNombre;
 

@@ -97,6 +97,8 @@ public class DbInitializer implements CommandLineRunner {
             for (int i = 1; i <= 20; i++) {
                 Admin admin = new Admin();
                 admin.setNombreAdmin("Admin" + i);
+                admin.setCorreo("admin" + i +"@hotmail.com");
+                admin.setPassword("password");
                 admin.setRol("Admin");
                 admin.setNegocio(negocioDisponible.get(i - 1));
                 adminRepository.save(admin);
@@ -116,6 +118,8 @@ public class DbInitializer implements CommandLineRunner {
 
                 JefeArea jefeArea1 = new JefeArea();
                 jefeArea1.setNombreJefe("Jefe de Area" + i);
+                jefeArea1.setCorreo("jefeArea" + i + "@hotmail.com");
+                jefeArea1.setPassword("password");
                 jefeArea1.setRol("Jefe_de_Area");
                 jefeArea1.setAreaNombre(arealeatoria.getNombreArea());
                 jefeArea1.setJefesAreaenNegocio(negocioaleatorio);
@@ -135,6 +139,13 @@ public class DbInitializer implements CommandLineRunner {
                 Curso curso = new Curso();
                 curso.setNombreCurso("Curso" + i);
                 curso.setCercaniaValoracion(random.nextInt(101));
+                curso.setHabilidad("habilidad" + i);
+                curso.setHoras("Horas");
+                curso.setLink("HyperLink");
+                curso.setDescripcion("Descripcion Curso #" + i);
+                curso.setEstado("Status");
+                curso.setFechaAsignado("Fecha" + i);
+                curso.setFechaVencimiento("Fecha" + i);
 
                 cursoRepository.save(curso);
                 cursosDisponibles.add(curso);
@@ -176,6 +187,16 @@ public class DbInitializer implements CommandLineRunner {
                 empleado.setValoracion(0);
                 empleado.setNumCursos(0);
                 empleado.setCursosCursados(0);
+                empleado.setEncuestasRealizadas(0);
+                empleado.setAfectiva(0);
+                empleado.setEmpatia(0);
+                empleado.setTiempo(0);
+                empleado.setEquipo(0);
+                empleado.setProblemas(0);
+                empleado.setVentas(0);
+                empleado.setAdaptabilidad(0);
+                empleado.setEmocional(0);
+
                 empleado.setEmpleadosJefeArea(jefeAleatorio);
 
                 empleadoRepository.save(empleado);
@@ -186,6 +207,13 @@ public class DbInitializer implements CommandLineRunner {
                     Curso cursoAleatorio = cursosDisponibles.get(random.nextInt(cursosDisponibles.size()));
                     nuevoEmpleadoXCurso.setNombreCurso(cursoAleatorio.getNombreCurso());
                     nuevoEmpleadoXCurso.setCercaniaValoracion(cursoAleatorio.getCercaniaValoracion());
+                    nuevoEmpleadoXCurso.setHabilidad(cursoAleatorio.getHabilidad());
+                    nuevoEmpleadoXCurso.setHoras(cursoAleatorio.getHoras());
+                    nuevoEmpleadoXCurso.setLink(cursoAleatorio.getLink());
+                    nuevoEmpleadoXCurso.setDescripcion(cursoAleatorio.getDescripcion());
+                    nuevoEmpleadoXCurso.setEstado(cursoAleatorio.getEstado());
+                    nuevoEmpleadoXCurso.setFechaAsignado(cursoAleatorio.getFechaAsignado());
+                    nuevoEmpleadoXCurso.setFechaVencimiento(cursoAleatorio.getFechaVencimiento());
                     nuevoEmpleadoXCurso.setEmpleado(empleado);
                     nuevoEmpleadoXCurso.setCurso(cursoAleatorio);
                     empleadoXCursoRepository.save(nuevoEmpleadoXCurso);

@@ -29,6 +29,14 @@ public class Curso {
 
     private String nombreCurso;
     private int cercaniaValoracion;
+    private String habilidad;
+    private String horas;
+    private String link;
+    private String descripcion;
+    private String estado;
+    private String fechaAsignado;
+    private String fechaVencimiento;
+
 
     @OneToMany(mappedBy = "curso")
     @JsonIgnore

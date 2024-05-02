@@ -25,6 +25,8 @@ public class Admin {
     private Long id;
 
     private String nombreAdmin;
+    private String correo;
+    private String password;
     private String rol;
 
     @JsonIgnore

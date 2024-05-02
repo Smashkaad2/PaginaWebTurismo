@@ -31,6 +31,7 @@ public class Empleado {
 
     private String nombreEmpleado;
     private String correo;
+    private String password;
     private String fechaContrato;
     private String area;
     private String rol;
@@ -38,6 +39,15 @@ public class Empleado {
     private int valoracion;
     private int numCursos;
     private int cursosCursados;
+    private int encuestasRealizadas;
+    private int afectiva;
+    private int empatia;
+    private int tiempo;
+    private int equipo;
+    private int problemas;
+    private int ventas;
+    private int adaptabilidad;
+    private int emocional;
 
     @OneToMany(mappedBy = "empleado")
     private List<EmpleadoXCurso> cursos;
@@ -53,9 +63,6 @@ public class Empleado {
     public boolean addCurso(EmpleadoXCurso curso) {
         return cursos.add(curso);
     }
-
-
-   
 
    
 }

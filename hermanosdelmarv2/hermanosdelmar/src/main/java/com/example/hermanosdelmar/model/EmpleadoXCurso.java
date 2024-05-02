@@ -25,6 +25,13 @@ public class EmpleadoXCurso {
 
     private String nombreCurso;
     private int cercaniaValoracion;
+    private String habilidad;
+    private String horas;
+    private String link;
+    private String descripcion;
+    private String estado;
+    private String fechaAsignado;
+    private String fechaVencimiento;
 
      @ManyToOne
      @JsonIgnore
