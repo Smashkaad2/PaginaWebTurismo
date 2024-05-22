@@ -28,7 +28,7 @@ DELETE http://localhost:8080/admin/21
 ---------------------------------------------------------
 
 ###Negocio Id
-GET http://localhost:8080/negocios/1
+GET http://localhost:8080/negocios/2
 
 
 ###Negocio Lista
